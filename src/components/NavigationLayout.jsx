@@ -2,8 +2,10 @@ import React from "react";
 import Topbar from "./Topbar";
 import SidebarItem from "./SidebarItem";
 import { assets } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 const NavigationLayout = ({ children, title }) => {
+    const navigate = useNavigate();
   return (
     <div>
       <Topbar />
@@ -17,10 +19,11 @@ const NavigationLayout = ({ children, title }) => {
           </div>
           <div className="flex flex-col h-[70vh] justify-between">
             <div className="flex flex-col gap-3">
-              <SidebarItem icon={assets.dashboard_icon} label="Dashboard" />
+              <SidebarItem icon={assets.dashboard_icon} label="Dashboard" onClick={() => navigate("/")} />
               <SidebarItem
                 icon={assets.document_icon}
                 label="Legacy Preservation"
+                onClick={() => navigate("/legacy-preservation")} 
               />
               <SidebarItem
                 icon={assets.userdocument_icon}

@@ -3,8 +3,11 @@ import Topbar from "../components/Topbar";
 import FeatureCard from "../components/FeatureCard";
 import { assets } from "../assets/assets";
 import SidebarItem from "../components/SidebarItem";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
   return (
     <div className="bg-[#F9FAFB] min-h-screen">
       <Topbar />
@@ -25,6 +28,7 @@ const HomePage = () => {
             icon={assets.document_ongoing_icon}
             title="Legacy Preservation"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            onClick={() => navigate("/legacy-preservation")}
           />
           <FeatureCard
             icon={assets.userdocument_ongoing_icon}

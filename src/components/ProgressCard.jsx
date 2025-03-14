@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProgressCard = ({ icon, title, progress, total, description, buttonText }) => {
+const ProgressCard = ({ icon, title, progress, total, description, buttonText, onClick }) => {
   return (
     <div className="w-[300px] p-6 bg-white rounded-lg shadow-md">
       {/* title and icon */}
@@ -26,7 +26,7 @@ const ProgressCard = ({ icon, title, progress, total, description, buttonText })
       <p className="text-sm text-gray-600 mt-3">{description}</p>
 
       {/* button */}
-      <button className="mt-4 w-full bg-[#5F348C] text-white text-sm font-semibold py-2 rounded-lg flex items-center justify-center gap-1 hover:bg-purple-800 transition">
+      <button className="mt-4 w-full bg-[#5F348C] text-white text-sm font-semibold py-2 rounded-lg flex items-center justify-center gap-1 hover:bg-purple-800 transition" onClick={onClick}>
         {buttonText} <span>→</span>
       </button>
     </div>

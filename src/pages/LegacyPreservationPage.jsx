@@ -3,8 +3,12 @@ import Topbar from "../components/Topbar";
 import NavigationLayout from "../components/NavigationLayout";
 import ProgressCard from "../components/ProgressCard";
 import { assets } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 const LegacyPreservationPage = () => {
+
+    const navigate = useNavigate();
+
   return (
     <div>
       <NavigationLayout title="Legacy Preservation">
@@ -16,6 +20,7 @@ const LegacyPreservationPage = () => {
             total={6}
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             buttonText="Continue"
+            onClick={() => navigate("/legacy-preservation/story-and-legacy")}
           />
           <ProgressCard
             icon={assets.advancedCarePlanning_icon}
