@@ -8,6 +8,14 @@ import dashboard_icon from './dashboard.png'
 import document_icon from './document.png'
 import userdocument_icon from './userdocument.png'
 import library_icon from './library.png'
+import storyLegacy_icon from './story&legacy.png'
+import advancedCarePlanning_icon from './advancedCarePlanning.png'
+import legal_icon from './legal.png'
+import lifeMatters_icon from './lifeMatters.png'
+import financial_icon from './financial.png'
+import funeralWishes_icon from './funeralWishes.png'
+import contact_icon from './contact.png'
+import lovedOnes_icon from './lovedOnes.png'
 
 
 export const assets = {
@@ -21,5 +29,13 @@ export const assets = {
     document_icon,
     userdocument_icon,
     library_icon,
-    
+    storyLegacy_icon,
+    advancedCarePlanning_icon,
+    legal_icon,
+    lifeMatters_icon,
+    financial_icon,
+    funeralWishes_icon,
+    contact_icon,
+    lovedOnes_icon,
+
 }
