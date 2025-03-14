@@ -9,7 +9,7 @@ const NavigationLayout = ({ children, title }) => {
       <Topbar />
       <div className="flex">
         {/* Sidebar */}
-        <div className="mt-[56px] ml-[138px]">
+        <div className="mt-[56px] ml-[60px]">
           <div className="flex gap-x-1 my-[15px]">
             <p className="text-[#5F348C] text-sm">Home</p>
             <p className="text-[#666666] text-sm">&gt;</p>
@@ -33,7 +33,7 @@ const NavigationLayout = ({ children, title }) => {
             </div>
           </div>
         </div>
-        <div className="mt-[56px] ml-[138px]">
+        <div className="mt-[56px] ml-[60px]">
           {/*Main content*/}
           <h1 className="text-3xl">{title}</h1>
           {children}

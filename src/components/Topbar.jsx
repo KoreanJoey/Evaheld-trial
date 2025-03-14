@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Topbar = () => {
   return (
-    <div className="bg-[#F9FAFB] h-[97px] flex items-center justify-between px-[136px] shadow-md">
+    <div className="bg-[#F9FAFB] h-[75px] flex items-center justify-between px-[100px] shadow-md">
       {/* 왼쪽: 로고 */}
       <div className="text-2xl font-bold">
         <img src={assets.logo_icon} alt="Home icon" />
