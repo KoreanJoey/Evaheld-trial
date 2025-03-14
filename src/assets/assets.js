@@ -1,0 +1,16 @@
+import logo_icon from './Evaheld-Logo.png'
+import logout_icon from './Logout-Logo.png'
+import document_ongoing_icon from './documentOngoing.png'
+import userdocument_ongoing_icon from './userdocumentOngoing.png'
+import houselock_ongoing_icon from './houselockOngoing.png'
+import person_icon from './person-Logo.png'
+
+
+export const assets = {
+    logo_icon,
+    logout_icon,
+    document_ongoing_icon,
+    userdocument_ongoing_icon,
+    houselock_ongoing_icon,
+    person_icon
+}
