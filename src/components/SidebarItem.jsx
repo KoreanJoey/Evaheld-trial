@@ -7,7 +7,7 @@ const SidebarItem = ({icon, label}) => {
     <img src={icon} alt="icon" />
 
     {/* 라벨 (메뉴명) */}
-    <span className="text-lg font-medium text-[#666666] ml-[15px] ">{label}</span>
+    <span className="text-sm font-normal text-[#666666] ml-[15px] ">{label}</span>
   </div>
   )
 }
