@@ -37,7 +37,7 @@ const NavigationLayout = ({ children, title }) => {
           </div>
         </div>
         <div className="mt-[56px] ml-[60px]">
-          {/*Main content*/}
+          {/*Main content -> should be exist separately*/}
           <h1 className="text-3xl">{title}</h1>
           {children}
         </div>
